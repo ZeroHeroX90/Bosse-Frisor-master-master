@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>& Co</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> 
+
+    <!-- google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- the stylesheets -->
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <link rel="stylesheet" type="text/css" href="css/hover-min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/animations.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/booking-page.css">
+    <link rel="stylesheet" href="css/style.css">
+      
+  </head>
+
+  <body>
+    <header>
+        <!-- ENTER YOUR DROP DOWN BUTTON HERE -->
+        <!-- Navigation area -->
+        <div>
+            <div class="row">
+              <center><a data-scroll href="index.html" class="hvr-wobble-vertical menu-effect" id="back-to-website"><h4>Tillbaka till hemsidan</h4></a></center>
+            </div>
+        </div>            
+                
+        <!-- Content Area -->
+
+        </header>
+    <div class="container">
+      <div class="row header">
+        <h1>& Co Online Bokning&nbsp;</h1>
+        <h3>Fyll i online-formen med din klippnings-information.</h3>
+      </div>
+      <div class="row body">
+        <form action="#">
+          <ul>
+            <li>
+              <p class="left">
+                <label for="first_name">Förnamn</label>
+                <input type="text" name="first_name" placeholder="förnamn.." />
+              </p>
+              <p>
+                <label for="last_name">Efternamn</label>
+                <input type="text" name="last_name" placeholder="efternamn.." />      
+              </p>
+            </li>
+              <hr>
+            <li>
+              <p class="left">
+                <label for="first_name">Frisör</label>
+                <select id="frisor-selection">
+                  <option value="monia">Monia</option>
+                  <option value="nicole">Nicole</option>
+                  <option value="catrin">Catrin</option>
+                  <option value="louise">Louise</option>
+                  <option value="ida">Ida</option>
+                  <option value="valfri">Valfri</option>
+                </select>
+              </p>
+              <p>
+                <label for="first_name">Tid</label>
+                <select id="frisor-selection-when">
+                  <option value="förmiddagen">Förmiddagen</option>
+                  <option value="efermiddagen">Eftermiddagen</option>
+                </select>
+              </p>
+            </li>
+
+            <li>
+              <p class="time-picker">
+                  <label for="first_name time-name" id="frisor-selection-title"></label>
+                  <p>mellan</p>
+              </p>
+              <p class="time-picker">
+                  <label for="first_name time-name" id="frisor-selection-title">Tids-intervall</label>
+                  <select id="frisor-selection-time">
+                    <option value="volvo">07:00</option>
+                    <option value="eftermiddagen">08:00</option>
+                    <option value="volvo">09:00</option>
+                    <option value="eftermiddagen">10:00</option>
+                    <option value="volvo">11:00</option>
+                    <option value="eftermiddagen">12:00</option>
+                    <option value="volvo">13:00</option>
+                    <option value="eftermiddagen">14:00</option>
+                    <option value="volvo">15:00</option>
+                    <option value="eftermiddagen">16:00</option>
+                    <option value="volvo">17:00</option>
+                    <option value="eftermiddagen">18:00</option>
+                  </select>
+              </p>
+              <p class="time-picker">
+                  <label for="first_name time-name" id="frisor-selection-title"></label>
+                  <p>till</p>
+              </p>
+              <p class="time-picker">
+                  <label for="first_name time-name" id="frisor-selection-title">Tids-intervall</label>
+                  <select id="frisor-selection-time">
+                    <option value="volvo">07:00</option>
+                    <option value="eftermiddagen">08:00</option>
+                    <option value="volvo">09:00</option>
+                    <option value="eftermiddagen">10:00</option>
+                    <option value="volvo">11:00</option>
+                    <option value="eftermiddagen">12:00</option>
+                    <option value="volvo">13:00</option>
+                    <option value="eftermiddagen">14:00</option>
+                    <option value="volvo">15:00</option>
+                    <option value="eftermiddagen">16:00</option>
+                    <option value="volvo">17:00</option>
+                    <option value="eftermiddagen">18:00</option>
+                  </select>
+              </p>
+            </li>
+              <hr>
+            <li>
+              <p>
+                <label for="email">email <span class="req">*</span></label>
+                <input type="email" name="email" placeholder="din.email@hotmail.com" />
+              </p>
+            </li>        
+            <hr>
+            <li>
+              <label for="comments">En frivillig kommentar</label>
+              <textarea cols="46" rows="3" name="comments"></textarea>
+            </li>
+            
+           <!-- START ALERT AND TOOLTIPS
+              ================================================== -->
+              <div>
+                  <div class="alert alert-success alert-block fade in" id="successAlert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    
+                    <h4>Din Bokning har skickats</h4>
+                    <p>Du har nu preliminärbokat din tid hos oss. Vi granskar och svarar på din bokning så snabbt vi kan!</p>
+                  </div><!-- /.alert -->
+                  <a href="contact-form.html" id="alertMe">
+                    <input class="btn btn-submit" type="submit" value="Skicka Bokning" />
+                  </a><!-- Needs script.js to work -->
+              </div>
+            <!-- ================================================== 
+            //END ALERT AND TOOL IPS -->
+            
+          </ul>
+        </form>  
+      </div>
+    </div>
+
+    <!-- boknings script-->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>    
+    <!-- Custom JS -->
+    <script src="js/script1.js"></script>
+
+   </body>
+</html>

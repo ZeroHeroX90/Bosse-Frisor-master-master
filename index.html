@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <title>& Co</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> 
+
+    <!-- google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- BOOTSTRAP START HERE -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    
+    <!-- the stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <link rel="stylesheet" type="text/css" href="css/hover-min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/animations.css">
+
+    <!-- CAROUSEL -->
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+    <!-- END CAROUSEL -->
+
+    <!-- smooth scrolling -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/chromeSmoothScroll.min.js"></script>
+    <!-- end smooth scrolling -->
+
+    <script src="js/modernizr.js"></script> <!-- detta är "våra arbeten scriptet" -->
+
+    <style>
+        #carousel1 .nav a small {
+            display: block;
+        }
+        #carousel1 .nav {
+            background: #eee;
+        }
+        .nav-justified > li > a {
+            border-radius: 0px;
+        }
+        .nav-pills > li[data-slide-to="0"].active a {
+            background-color: #b4d9a7;
+        }
+        .nav-pills > li[data-slide-to="1"].active a {
+            background-color: #4f77cb;
+        }
+        .nav-pills > li[data-slide-to="2"].active a {
+            background-color: #d11e4f;
+        }
+
+    </style> 
+
+<!-- style for the overlay top -->
+    <style>
+
+.content {
+  width: 280px;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -118px;
+}
+.content:before {
+  content: '[';
+  position: absolute;
+  left: -30px;
+  line-height: 40px;
+}
+.content:after {
+  content: ']';
+  position: absolute;
+  right: -30px;
+  line-height: 40px;
+}
+.content:after, .content:before {
+  color: green;
+  font-size: 42px;
+  animation: 2s linear 0s normal none infinite opacity;
+  -webkit-animation: 2s ease-out 0s normal none infinite opacity;
+  -moz-animation: 2s ease-out 0s normal none infinite opacity;
+  -o-animation: 2s ease-out 0s normal none infinite opacity;
+}
+.visible {
+  float: left;
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+}
+#p-body-top {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+#ul-top-body {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  animation: 6s linear 0s normal none infinite change;
+  -webkit-animation: 6s linear 0s normal none infinite change;
+  -moz-animation: 6s linear 0s normal none infinite change;
+  -o-animation: 6s linear 0s normal none infinite change;
+}
+#ul-top-body, .li-top-body {
+  line-height: 40px;
+  margin: 0;
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes change {
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -80px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  75% {
+    margin-top: -40px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes change {
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -80px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  75% {
+    margin-top: -40px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+    </style>
+<!-- style for the overlay top -->
+
+</head>
+    <body id="top-body">
+        <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+        <div class='content'>
+          <div class='visible'>
+            <p id="p-body-top">
+              Vi är
+            </p>
+            <ul id="ul-top-body">
+              <li class="li-top-body">Coola</li>
+              <li class="li-top-body">Frisörer</li>
+              <li class="li-top-body">& Co</li>
+            </ul>
+          </div>
+        </div>
+        <!--[if lt IE 7]>
+                <p>Du använder en <strong>gammal</strong> webläsare. Gå till<a href="https://www.google.se/chrome/browser/desktop/">och uppgradera din browser</a> för att förbättra din upplevelse.</p>
+        <![endif]-->
+
+        <!-- Header area -->
+        <header id="header">
+        <!-- ENTER YOUR DROP DOWN BUTTON HERE -->
+        <!-- Navigation area -->
+        <section id="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="logo">
+                            <a data-scroll href="#body" class="logo-text"><h1>& Co - Kristianstad</h1></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="nav">
+                            <a href="#" data-placement="bottom" title="Menu" class="menu" data-toggle="dropdown"><i class="pe-7s-menu"></i></a>
+                             <div class="dropdown-menu">
+                                 <div class="arrow-up"></div>
+                                 <ul>
+                                     <li><a data-scroll href="#body">Hem <i class="pe-7s-home"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#services">Salongen <i class="pe-7s-albums"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#priser">Priser <i class="pe-7s-info"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#portfolio">Produkter <i class="pe-7s-photo-gallery"></i><span class="menu-effect"></span></a></li>
+                                     <li><a data-scroll href="#testimonial">Frisörerna <i class="pe-7s-users"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#contact">Kontakt <i class="pe-7s-mail"></i></a><span class="menu-effect"></span></li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
+                    <a data-scroll href="contact-form.html" class="hvr-wobble-vertical menu-effect" id="booking-button-top"><h4>Boka Direkt</h4></a>
+                    <a data-scroll href="#priser" href="#" class="hvr-wobble-vertical" id="booking-button-top"><h4>Priser</h4></a>
+                </div>
+            </div>            
+        </section>
+        
+        <!-- Content Area -->
+
+        </header>
+
+       <!-- services section -->
+
+        <section id="services" class="service-area">
+            <div class="container">
+                <h2 class="block_title">Salongen</h2>
+                <div class="row">
+                    <!-- Slider Carousel - START -->
+                    <div class="container">
+                            <div id="carousel1" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <center><img alt="Bootstrap template" src="images/produkter.jpg"></center>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <center><img alt="Bootstrap template" src="images/produkter.jpg"></center>
+                                        <div class="carousel-caption">
+                                            <div class="col-lg-12 text-center v-center" style="font-size: 39pt;">
+                                                <a href="#"><span class="avatar"><i class="fa fa-google-plus"></i></span></a>
+                                                <a href="#"><span class="avatar"><i class="fa fa-linkedin"></i></span></a>
+                                                <a href="#"><span class="avatar"><i class="fa fa-facebook"></i></span></a>
+                                                <a href="#"><span class="avatar"><i class="fa fa-github"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <center><img alt="Bootstrap template" src="images/produkter.jpg"></center>
+                                        <div class="carousel-caption">
+                                            <h3></h3>
+                                            <p>
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="nav nav-pills nav-justified">
+                                    <li data-target="#carousel1" data-slide-to="0" class="active">
+                                        <a href="#">About<small>Lorem ipsum dolor sit</small></a>
+                                    </li>
+                                    <li data-target="#carousel1" data-slide-to="1">
+                                        <a href="#">Projects<small>Lorem ipsum dolor sit</small></a>
+                                    </li>
+                                    <li data-target="#carousel1" data-slide-to="2">
+                                        <a href="#">Portfolio<small>Lorem ipsum dolor sit</small></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="col-md-12 col-sm-12">
+                        <center><img src="images/crew.png" class="img-responsive"></center>
+                    </div>
+                 </div>
+            </div>
+        </section><!-- services -->
+
+         <!-- Priser -->
+
+        <section id="priser" class="service-area">
+            <div class="container">
+                <h2 class="block_title">Priser</h2>
+                <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+             
+                <thead>
+                    <tr>
+                        <th>
+                            
+                        </th>
+                        <th>
+                        </th>
+                        <th>
+                            Ålder
+                        </th>
+                        <th>
+                            Pris
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="success">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Barn
+                        </td>
+                        <td>
+                            1-12
+                        </td>
+                        <td>
+                            200<span>:-</span>
+                        </td>
+                    </tr>
+                    <tr class="success">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Ungdom
+                        </td>
+                        <td>
+                            13-18
+                        </td>
+                        <td>
+                            <span>250</span><span>:-</span>
+                        </td>
+                    </tr>
+                    <tr class="success">
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            Student
+                        </td>
+                        <td>
+                            student kort
+                        </td>
+                        <td>
+                            210<span>:-</span>
+                        </td>
+                    </tr>
+                    <tr class="danger">
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            Hårstyling/Färgning
+                        </td>
+                        <td>
+                            alla åldrar
+                        </td>
+                        <td>
+                            500<span>:-</span>
+                        </td>
+                    </tr>
+                    <tr class="danger">
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            Skägg trimmning
+                        </td>
+                        <td>
+                            alla åldrar
+                        </td>
+                        <td>
+                            110<span>:-</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+        </section><!-- /priser -->
+
+        <!-- Portfolio Area -->
+
+        <section id="portfolio" class="portfolio-area">
+            <div class="container">
+                <h2 class="block_title">Våra Produkter</h2>
+                <h3>Produkterna</h3> 
+                <p>Hos oss hittar du ekologiska, ammoniakfria och dermatologiska färger, så allergivänligt som möjligt. Vi har produkter fria från parabener och sulfater och i stor grad ekologiska. Det som är extra bra för dig och ditt hår, är också bra för oss.</p> 
+                <div class="row port cs-style-3">
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space" align="center">
+                        <figure>
+                            <img src="images/portfolio1.jpg" alt="img04">
+                            <figcaption>
+                                <h3>Schwarzkopf <br>Professional</h3>
+                                <a href="#" class="button" >Se info</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space" align="center">
+                        <figure>
+                            <img src="images/portfolio2.jpg" alt="img01">
+                            <figcaption>
+                                <h3>Schwarzkopf <br>Professional</h3>
+                                <a href="#" class="button" >Se info</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space" align="center">
+                        <figure>
+                            <img src="images/portfolio3.jpg" alt="img02">
+                            <figcaption>
+                                <h3>Schwarzkopf <br>Professional</h3>
+                                <a href="#" class="button" >Se info</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space" align="center">
+                        <figure>
+                            <img src="images/portfolio4.jpg" alt="img04">
+                            <figcaption>
+                                <h3>Schwarzkopf <br>Professional</h3>
+                                <a href="#" class="button" >Se info</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space" align="center">
+                        <figure>
+                            <img src="images/portfolio5.jpg" alt="img01">
+                            <figcaption>
+                                <h3>Schwarzkopf <br>Professional</h3>
+                                <a href="#" class="button" >Se info</a>
+                            </figcaption> 
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space" align="center">
+                        <figure>
+                            <img src="images/portfolio6.jpg" alt="img02">
+                            <figcaption>
+                                <h3>Schwarzkopf <br>Professional</h3>
+                                <a href="#" class="button" >Se info</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="btn-center"><a href="#" class="big button">Se alla produkter</a></div>
+                    </div>
+                </div>
+            </div><!-- container -->
+        </section><!-- portfolio -->
+
+        <!-- Testimonial Area -->
+
+        <section id="testimonial" class="testimonial-area">
+            <div class="container">
+                <h2 class="block_title">Frisörerna</h2>
+                <div class="row">
+                    <div class="col-xs-12">
+                    </div>
+                    <div id="testimonial-container" class="col-xs-12">
+                        <div class="testimonila-block">
+                            <img src="images/testimonial.jpg" alt="clients" class="selfshot">
+                            <p>På Frisör & Co hittar du Monia, Nicole, Catrin och Louise och nu också Ida! Hon är vårt senaste tillskott. Välkommen!</p>
+                            <strong>Catrin</strong>
+                            <br>
+                            <small>Frisör/Ägare</small>
+                        </div>
+                        <div class="testimonila-block">
+                            <img src="images/testimonial2.jpg" alt="clients" class="selfshot">
+                            <p>På Frisör & Co hittar du Monia, Nicole, Catrin och Louise och nu också Ida! Hon är vårt senaste tillskott. Välkommen!</p>
+                            <strong>Ida Rudolfsson</strong>
+                            <br>
+                            <small>Frisör</small>
+                        </div>
+                        <div class="testimonila-block">
+                            <img src="images/testimonial3.jpg" alt="clients" class="selfshot">
+                            <p>På Frisör & Co hittar du Monia, Nicole, Catrin och Louise och nu också Ida! Hon är vårt senaste tillskott. Välkommen!</p>
+                            <strong>Ida Rudolfsson</strong>
+                            <br>
+                            <small>Frisör</small>
+                        </div>
+                        <div class="testimonila-block">
+                            <img src="images/testimonial.jpg" alt="clients" class="selfshot">
+                            <p>På Frisör & Co hittar du Monia, Nicole, Catrin och Louise och nu också Ida! Hon är vårt senaste tillskott. Välkommen!</p>
+                            <strong>Catrin</strong>
+                            <br>
+                            <small>Frisör</small>
+                        </div>
+                        <div class="testimonila-block">
+                            <img src="images/testimonial.jpg" alt="clients" class="selfshot">
+                            <p>På Frisör & Co hittar du Monia, Nicole, Catrin och Louise och nu också Ida! Hon är vårt senaste tillskott. Välkommen!</p>
+                            <strong>Catrin</strong>
+                            <br>
+                            <small>Frisör</small>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- container -->
+        </section><!-- testimonial -->
+
+        <!-- Contact Area -->
+
+        <section id="contact" class="contentbottom">
+            <div id="bottom-background"></div>
+            <div id="contact-area">
+                <div class="container">
+                    <h2 class="block_title">Kontakt och Bokning</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="moreDetails">
+                                <h2 class="con-title">Lite mer om oss.</h2>
+                                <p> Titta gärna in och hälsa, Ibland kan du bara "droppa in" om vi har tid, men oftast är det bäst att du bokar tid. </p>
+                                <p>Här kan du boka.</p>
+                                <ul class="address">
+                                    <li><i class="pe-7s-map-marker"></i><span>Tivoligatan 4, Kristianstad</span></li>
+                                    <li><i class="pe-7s-mail"></i><span>booking@frisorco.com</span></li>
+                                    <li><i class="pe-7s-phone"></i><span>044-20 00 02</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h1>Boka din tid online här!</h1>
+                            <p>snabbt och enkelt.</p>
+                            <a data-scroll href="contact-form.html" class="hvr-wobble-vertical menu-effect" id="booking-button-bottom"><h4>Boka Direkt</h4></a>
+                        </div>
+                        <div class="col-sm-12" id="feedback-form">
+                            <h5 class="con-title">Fyll in valfri feedback</h5>
+                            <p>Fyll gärna i denna from om vad du tycker om våran Salong, Personal och Hemsida.</p>
+                            <form role="form">
+                                <div class="form-group">
+                                <input type="text" class="form-control" id="user_name" placeholder="Skriv in ditt namn">
+                              </div>
+                              <div class="form-group">
+                                <input type="email" class="form-control" id="your_email" placeholder="Skriv in din email-adress">
+                              </div>
+                              <div class="form-group">
+                                <textarea name="InputMessage" id="user_message" class="form-control" rows="5" required placeholder="Skriv din kommentar här.."></textarea>
+                              </div>
+
+                              <button type="submit" class="btn medium">Skicka</button>
+                            </form>   
+                        </div>
+                    </div>
+                </div><!-- container -->
+            </div><!-- contact-area -->
+
+            <div id="social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="scoialinks">
+                                <li class="normal-txt">Hitta oss på</li>
+                                <li class="social-icons"><a class="facebook" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- social -->
+        </section><!-- contact -->
+
+        <section>
+            <!-- START THE MAP HERE -->
+            <div id="map"></div><!-- #map -->
+            <script>
+                var marker;
+
+                function initMap() {
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 12,
+                    center: {lat: 56.033474, lng: 14.162759}
+                  });
+
+                  marker = new google.maps.Marker({
+                    map: map,
+                    draggable: true,
+                    animation: google.maps.Animation.DROP,
+                    position: {lat: 56.043474, lng: 14.162759}
+                  });
+                  marker.addListener('click', toggleBounce);
+                }
+
+                function toggleBounce() {
+                  if (marker.getAnimation() !== null) {
+                    marker.setAnimation(null);
+                  } else {
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                  }
+                }
+
+              </script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCksS6V0dNeXqdCMNijzfinuDYsdfCrGzY&signed_in=true&callback=initMap">
+            </script>
+
+            <script type="text/javascript">
+                var marker;
+
+                function initMap() {
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 12,
+                    center: {lat: 56.033474, lng: 14.162759}
+                  });
+
+                  marker = new google.maps.Marker({
+                    map: map,
+                    draggable: true,
+                    animation: google.maps.Animation.DROP,
+                    position: {lat: 56.043474, lng: 14.162759}
+                  });
+                  marker.addListener('click', toggleBounce);
+                }
+
+                function toggleBounce() {
+                  if (marker.getAnimation() !== null) {
+                    marker.setAnimation(null);
+                  } else {
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                  }
+                }
+
+                </script>
+            <!-- END THE MAP HERE -->
+
+        </section>
+
+        <!-- Footer Area -->
+        <footer style="position: relative;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="copyright">© & Co 2016 <a href="http://www.frisorco.com/" target="_blank">http://www.frisorco.com/</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $('#carousel1').carousel({
+                    interval: 5000
+                });
+
+                var clickEvent = false;
+
+                $('#carousel1').on('click', '.nav a', function () {
+                    clickEvent = true;
+                    $('.nav li').removeClass('active');
+                    $(this).parent().addClass('active');
+                }).on('slid.bs.carousel', function (e) {
+                    if (!clickEvent) {
+                        var count = $('.nav').children().length - 1;
+                        var current = $('.nav li.active');
+                        current.removeClass('active').next().addClass('active');
+                        var id = parseInt(current.data('slide-to'));
+                        if (count == id) {
+                            $('.nav li').first().addClass('active');
+                        }
+                    }
+                    clickEvent = false;
+                });
+            });
+        </script>
+
+        <!-- Necessery scripts -->
+        <script type="text/javascript">
+          WebFontConfig = {
+            google: { families: [ 'Montserrat::latin' ] }
+          };
+          (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+              '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+          })(); 
+
+        </script>
+
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="js/jquery.actual.min.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
+

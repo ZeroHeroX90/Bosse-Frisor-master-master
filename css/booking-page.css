@@ -1,0 +1,572 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+body {
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin-top: -5%;
+}
+
+div, textarea, input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.name-form {
+  width: 110%;
+}
+
+.container {
+  max-width: 510px;
+  min-width: 324px;
+  margin: 50px auto 0px;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+  border-bottom: 3px solid #ccc;
+}
+
+.row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+.row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid #ccc;
+  background: url(../images/bg.jpg) left -120px;
+  color: #fff;
+}
+.row.body {
+  padding: .5em 2.5em 1em;
+}
+
+.pull-right {
+  float: right;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  font-weight: 100;
+  font-size: 2.8125em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 0 0.1em 0;
+  padding: 0 0 0.4em 0;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin: 1em 0 0.4em 0;
+}
+
+.btn {
+  font-size: 1.0625em;
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #fff;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  background-color: #b3b3b3;
+  border-bottom-color: #8c8c8c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.btn.btn-submit {
+  background-color: #222;
+  border-bottom-color: green;
+}
+.btn.btn-submit:hover {
+  background-color: green
+}
+
+form {
+  max-width: 100%;
+  display: block;
+}
+form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+form ul li {
+  margin: 0 0 0.25em 0;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+form ul li:last-child {
+  margin: 0;
+}
+form ul li p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+form ul li p.right {
+  float: right;
+}
+form ul li .divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #4f6fad;
+  background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+form ul li .req {
+  color: #ee9cb4;
+}
+form label {
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: green;
+  font-size: 1em;
+}
+form input {
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  color: #555;
+  font-size: 1em;
+}
+form textarea {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  width: 100%;
+  color: #555;
+}
+form small {
+  color: #4f6fad;
+  margin: 0 0 0 0.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  .pull-right {
+    float: none;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    clear: both;
+  }
+
+  li, p {
+    width: 100%;
+  }
+
+  input.btn {
+    margin: 1.5em 0 0.5em;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.125em;
+  }
+
+  li small {
+    display: none;
+  }
+}
+
+/* alerts */
+
+.alert {
+  padding: 10px 35px 10px 15px;
+  margin-bottom: 20px;
+  color: #c09853;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  border-radius: 4px;
+}
+
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.alert hr {
+  border-top-color: #f8e5be;
+}
+
+.alert .alert-link {
+  font-weight: 500;
+  color: #a47e3c;
+}
+
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+
+.alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+
+.alert-success .alert-link {
+  color: #356635;
+}
+
+.alert-danger {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+.alert-danger hr {
+  border-top-color: #e6c1c7;
+}
+
+.alert-danger .alert-link {
+  color: #953b39;
+}
+
+.alert-info {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+
+.alert-info .alert-link {
+  color: #2d6987;
+}
+
+.alert-block {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+
+.alert-block p + p {
+  margin-top: 5px;
+}
+
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+
+.modal-header .close {
+  margin-top: -2px;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+}
+
+.modal.fade.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+          transition: opacity 0.15s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.modal-backdrop.fade.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+
+
+
+/*
+
+My Custom CSS
+=============
+
+Author:  Bo Lovenhjelm
+Updated: November 2014
+Notes:   Hand coded for IT Gymnasiet.se
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+
+#featuresHeading {
+  padding: 40px 0;
+  text-align: left;
+}
+
+.features {
+  text-align: center;
+}
+
+.features img {
+  margin: 20px 0;
+}
+
+#inputMessage {
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #333;
+  color: #eee;
+  font-size: 11px;
+  padding: 20px;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  padding-top: 80px;
+}
+
+.well .page-header {
+  margin-top: 0;
+}
+
+.well .page-header h1 {
+  margin-top: 0;
+}
+
+ul.unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchInput {
+  width: 200px;
+}
+
+.navbar-brand {
+  padding: 14px 15px;
+}
+
+.navbar-shadow {
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(50, 50, 50, 0.35);
+  -moz-box-shadow:    0px 0px 9px 3px rgba(50, 50, 50, 0.35);
+  box-shadow:         0px 0px 9px 3px rgba(50, 50, 50, 0.35);
+   /* optional navbar drop shadow - create shadow at: http://css3gen.com/box-shadow/ */
+  }
+}
+   
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+  margin-top: 20px;
+}
+
+.carousel-caption {
+  font-size: 24px;
+}
+
+.carousel-caption h4 {
+  font-size: 32px;
+}
+
+#myCarousel .item { height: 400px; }
+
+#slide1 {
+  background: url('../images/carousel_medium_01.jpg') top center no-repeat;
+}
+
+#slide2 {
+  background: url('../images/carousel_medium_02.jpg') top center no-repeat;
+}
+
+#slide3 {
+  background: url('../images/carousel_medium_03.jpg') top center no-repeat;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+.alert {
+  margin-top: 20px;
+  display: none;
+}
+
+.well {
+  margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+  margin: 0 20px 10px 0;
+}
+
+.thumbnails {
+  margin: 20px 0;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.thumbnail h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  line-height: 20px;
+}
+
+.thumbnail .price {
+  font-size: 22px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 10px;
+}
+
+.thumbnail .price sup {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.thumbnail span.glyphicon {
+  margin-right: 5px;
+}
+
+.glyphicon-heart {
+  color: #C9302C;
+  margin-right: 2px;
+
+}
+
+.fa-heart {
+  color: #C9302C;
+  margin: 0 2px;
+
+}
+
+.fa-map-marker {
+  color:#F6544A;
+}
+
+.fish {
+  font-size: 90%;
+  font-weight: 300;
+
+}
+
+.codefish {
+  font-size: 100%;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+
+}
+
+.vertical-spacer {
+  display: block;
+  width: 100%;
+  height: 30px; /* An empty block with specified height */
+
+}
+
+.btn:focus {
+  outline: none; /* Removes ugly dotted outline on buttons */
+}
+
+p .pull-left{
+  margin-right: 8px; /* Sets right margin to 8 pixels on left-floated thumbnails */
+}
+
+p .pull-right{
+  margin-left: 8px; /* Sets left margin to 8 pixels on right-floated thumbnails */
+}
+
+
+
